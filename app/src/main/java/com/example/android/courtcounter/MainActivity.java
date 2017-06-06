@@ -10,8 +10,8 @@ import java.text.NumberFormat;
 
 
 public class MainActivity extends AppCompatActivity {
-    int score = 1;
 
+    int score = 1;
     TextView txt2;
 
     @Override
@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txt2 = (TextView) findViewById(R.id.text2);
-
     }
 
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given score on the screen.
      */
 
-    public void displayScore (int number) {
+    public void displayScore(int number) {
 
         txt2.setText(NumberFormat.getCurrencyInstance().format(number));
 
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increment_3(View view) {
-        Toast.makeText(this, "Hello there!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Team A scored!!", Toast.LENGTH_SHORT).show();
     }
 
 
