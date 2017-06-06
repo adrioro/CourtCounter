@@ -8,7 +8,7 @@
     android:orientation ="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Team A"
@@ -16,15 +16,16 @@
         android:padding="4dp"/>
 
     <TextView
-        android:id="@+id/display_score"
+        android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
         android:gravity="center_horizontal"
-        android:padding="4dp"/>
+        android:padding="4dp"
+        android:onClick="sendMessage"/>
 
     <Button
-        android:id="@+id/button_3points"
+        android:id="@+id/button_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+ 3 Points"
@@ -32,14 +33,14 @@
         android:onClick="increment_3"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+ 2 Points"
         android:layout_margin="8dp"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_free"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Free Throw"
