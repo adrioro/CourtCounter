@@ -29,11 +29,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the buttonA is clicked.
+     * This method is called when the button +3Points is clicked.
      */
-    public void sendMessage(View view) {
+    public void sendMessage1(View view) {
         Integer scoreA = score * 3;
         displayScore(scoreA);
+    }
+
+    /**
+     * This method is called when the button +2Points is clicked.
+     */
+    public void sendMessage2(View view) {
+        Integer scoreB = score * 2;
+        displayScore(scoreB);
     }
 
     /**

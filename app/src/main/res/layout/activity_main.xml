@@ -30,14 +30,15 @@
         android:layout_height="wrap_content"
         android:text="+ 3 Points"
         android:layout_margin="8dp"
-        android:onClick="sendMessage"/>
+        android:onClick="sendMessage1"/>
 
     <Button
         android:id="@+id/button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+ 2 Points"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="sendMessage2"/>
 
     <Button
         android:id="@+id/button_free"
