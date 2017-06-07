@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="+ 3 Points"
         android:layout_margin="8dp"
-        android:onClick="sendMessage1"/>
+        android:onClick="TeamAScores3"/>
 
     <Button
         android:id="@+id/button_2"
@@ -38,13 +38,14 @@
         android:layout_height="wrap_content"
         android:text="+ 2 Points"
         android:layout_margin="8dp"
-        android:onClick="sendMessage2"/>
+        android:onClick="TeamAScores2"/>
 
     <Button
         android:id="@+id/button_free"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Free Throw"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="TeamAScores1"/>
 
 </LinearLayout>

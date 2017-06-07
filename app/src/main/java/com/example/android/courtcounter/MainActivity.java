@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the button +3Points is clicked.
      */
-    public void sendMessage1(View view) {
+    public void TeamAScores3(View view) {
         Integer scoreA = score * 3;
         displayScore(scoreA);
     }
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the button +2Points is clicked.
      */
-    public void sendMessage2(View view) {
+    public void TeamAScores2(View view) {
         Integer scoreB = score * 2;
         displayScore(scoreB);
     }
@@ -49,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void displayScore(int number) {
-
         txt2.setText(String.valueOf(number));
 
     }
@@ -63,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void increment_3(View view) {
-        Toast.makeText(this, "Team A scored!!", Toast.LENGTH_SHORT).show();
+    public void TeamAScores1(View view) {
+        Integer scoreC = score;
+        displayScore(scoreC);;
     }
 
 
