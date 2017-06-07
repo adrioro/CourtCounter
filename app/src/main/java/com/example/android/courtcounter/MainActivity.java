@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.NumberFormat;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = (TextView) findViewById(R.id.text2);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayScore(int number) {
 
-        txt2.setText(NumberFormat.getCurrencyInstance().format(number));
+        txt2.setText(String.valueOf(number));
 
     }
 
