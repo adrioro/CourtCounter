@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score = 1;
+    int scoreTeamA = 0;
     TextView txt2;
 
     @Override
@@ -20,27 +20,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Displays the given score for Team A.
-     */
-    public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.text2);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    /**
      * This method is called when the button +3Points is clicked.
      */
     public void TeamAScores3(View view) {
-        Integer scoreA = score * 3;
-        displayScore(scoreA);
+        scoreTeamA = scoreTeamA + 3;
+        displayScore(scoreTeamA);
     }
 
     /**
      * This method is called when the button +2Points is clicked.
      */
     public void TeamAScores2(View view) {
-        Integer scoreB = score * 2;
-        displayScore(scoreB);
+        scoreTeamA = scoreTeamA + 2;
+        displayScore(scoreTeamA);
+    }
+
+    /**
+     * This method is called when the button button_free is clicked.
+     */
+    public void TeamAScores1(View view) {
+        scoreTeamA = scoreTeamA + 1;
+        displayScore(scoreTeamA);
     }
 
     /**
@@ -50,20 +50,6 @@ public class MainActivity extends AppCompatActivity {
     public void displayScore(int number) {
         txt2.setText(String.valueOf(number));
 
-    }
-
-    /**
-     * This method displays the given text on the screen.
-     */
-    private void displayMessage(String message) {
-        TextView txt2 = (TextView) findViewById(R.id.text2);
-        txt2.setText(message);
-
-    }
-
-    public void TeamAScores1(View view) {
-        Integer scoreC = score;
-        displayScore(scoreC);;
     }
 
 
