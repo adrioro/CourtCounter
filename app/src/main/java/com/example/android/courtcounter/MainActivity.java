@@ -15,9 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txt2 = (TextView) findViewById(R.id.text2);
+        txt2 = (TextView) findViewById(R.id.text2A);
     }
-
 
     /**
      * This method is called when the button +3Points is clicked.
@@ -52,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Displays the given score for Team A.
+     */
+    public void displayForTeamA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.text2A);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given score for Team A.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.text2B);
+        scoreView.setText(String.valueOf(score));
+    }
 
 }
 
