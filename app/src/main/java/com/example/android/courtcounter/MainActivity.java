@@ -9,63 +9,89 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
+    int scoreTeamB = 0;
     TextView txt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txt2 = (TextView) findViewById(R.id.text2A);
+
     }
 
     /**
+     * HERE STARTS SPECIFIC CODE FOR TEAM A
+     * <p>
      * This method is called when the button +3Points is clicked.
      */
-    public void TeamAScores3(View view) {
+    public void TeamAScores3ForA(View view) {
         scoreTeamA = scoreTeamA + 3;
-        displayScore(scoreTeamA);
+        displayScoreForA(scoreTeamA);
     }
 
     /**
      * This method is called when the button +2Points is clicked.
      */
-    public void TeamAScores2(View view) {
+    public void TeamAScores2ForA(View view) {
         scoreTeamA = scoreTeamA + 2;
-        displayScore(scoreTeamA);
+        displayScoreForA(scoreTeamA);
     }
 
     /**
      * This method is called when the button button_free is clicked.
      */
-    public void TeamAScores1(View view) {
+    public void TeamAScores1ForA(View view) {
         scoreTeamA = scoreTeamA + 1;
-        displayScore(scoreTeamA);
+        displayScoreForA(scoreTeamA);
     }
 
     /**
-     * This method displays the given score on the screen.
+     * This method displays the given score for Team A on the screen.
      */
 
-    public void displayScore(int number) {
+    public void displayScoreForA(int number) {
+        TextView txt2 = (TextView) findViewById(R.id.text2A);
         txt2.setText(String.valueOf(number));
 
     }
 
     /**
-     * Displays the given score for Team A.
+     * HERE STARTS SPECIFIC CODE FOR TEAM B
+     * <p>
+     * /**
+     * This method is called when the button +3Points is clicked.
      */
-    public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.text2A);
-        scoreView.setText(String.valueOf(score));
+    public void TeamAScores3ForB(View view) {
+        scoreTeamB = scoreTeamB + 3;
+        displayScoreForB(scoreTeamB);
     }
 
     /**
-     * Displays the given score for Team A.
+     * This method is called when the button +2Points is clicked.
      */
-    public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.text2B);
-        scoreView.setText(String.valueOf(score));
+    public void TeamAScores2ForB(View view) {
+        scoreTeamB = scoreTeamB + 2;
+        displayScoreForB(scoreTeamB);
     }
+
+    /**
+     * This method is called when the button button_free is clicked.
+     */
+    public void TeamAScores1ForB(View view) {
+        scoreTeamB = scoreTeamB + 1;
+        displayScoreForB(scoreTeamB);
+    }
+
+    /**
+     * This method displays the given score for Team B on the screen.
+     */
+
+    public void displayScoreForB(int number) {
+        TextView txt2 = (TextView) findViewById(R.id.text2B);
+        txt2.setText(String.valueOf(number));
+
+    }
+
 
 }
 

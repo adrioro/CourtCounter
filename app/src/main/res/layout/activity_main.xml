@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores3"
+            android:onClick="TeamAScores3ForA"
             android:text="+ 3 Points" />
 
         <Button
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores2"
+            android:onClick="TeamAScores2ForA"
             android:text="+ 2 Points" />
 
         <Button
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores1"
+            android:onClick="TeamAScores1ForA"
             android:text="Free Throw" />
 
     </LinearLayout>
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores3"
+            android:onClick="TeamAScores3ForB"
             android:text="+ 3 Points" />
 
         <Button
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores2"
+            android:onClick="TeamAScores2ForB"
             android:text="+ 2 Points" />
 
         <Button
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="TeamAScores1"
+            android:onClick="TeamAScores1ForB"
             android:text="Free Throw" />
 
     </LinearLayout>
