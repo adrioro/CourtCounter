@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-     CODE FOR RESER BUTTON
+     CODE FOR RESET BUTTON
      */
 
 
